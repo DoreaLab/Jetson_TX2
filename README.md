@@ -20,3 +20,6 @@ sudo apt-get install libatlas-base-dev -y
 pkg-config --libs --cflags opencv
 
 https://www.learnopencv.com/install-opencv3-on-ubuntu/
+
+
+ cmake -DCMAKE_BUILD_TYPE=Release -DPYTHON3_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_INCLUDE_DIR2=/usr/include/x86_64-linux-gnu/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so -DPYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include -DCMAKE_INSTALL_PREFIX=/usr/local .. 
