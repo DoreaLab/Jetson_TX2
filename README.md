@@ -11,12 +11,12 @@ sudo apt-get install libfreetype6-dev
 
 sudo apt-get install pkg-config
 
-sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev \
-
-libhdf5-serial-dev protobuf-compiler -y
+sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-devlibhdf5-serial-dev protobuf-compiler -y
 
 sudo apt-get install libatlas-base-dev -y
 
 
 ## Check OpenCV
 pkg-config --libs --cflags opencv
+
+https://www.learnopencv.com/install-opencv3-on-ubuntu/
