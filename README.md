@@ -5,6 +5,8 @@ sudo apt-get update -y
 
 sudo apt-get install ubuntu-restricted-extras
 
+sudo apt-add-repository multiverse
+
 sudo apt-get update
 
 sudo apt-get install python3-pip
