@@ -24,7 +24,7 @@ sudo apt-get install libatlas-base-dev -y
 sudo apt-get install openjdk-8-jdk
 
 sudo apt-get install openjdk-8-jre
-
+ 
 
 ## Check OpenCV
 pkg-config --libs --cflags opencv
