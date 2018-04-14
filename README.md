@@ -187,3 +187,10 @@ a GCC compiler from the GCC 5.x series. In this case:
       Ensure that `gcc --version` is the desired version.
       
     * Proceed with building, as described below.
+    
+    
+# Start Fan 
+sudo nano /etc/rc.local
+
+/home/nvidia/jetson_clocks.sh
+
