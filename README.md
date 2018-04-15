@@ -188,7 +188,30 @@ a GCC compiler from the GCC 5.x series. In this case:
       Ensure that `gcc --version` is the desired version.
       
     * Proceed with building, as described below.
-    
+  
+### buid command
+install libgtk2.0-dev
+
+cmake -DCMAKE_BUILD_TYPE=Release \
+     -DCMAKE_INSTALL_PREFIX=/usr \
+     -DBUILD_opencv_java=ON \
+     -DPYTHON3_EXECUTABLE=/usr/bin/python3 \
+     -DBUILD_opencv_python2=OFF \
+     -DBUILD_opencv_python3=ON \
+     -DENABLE_PRECOMPILED_HEADERS=OFF \
+     -DWITH_OPENCL=OFF \
+     -DWITH_OPENMP=OFF \
+     -DWITH_FFMPEG=ON \
+     -DWITH_GSTREAMER=ON \
+     -DWITH_CUDA=ON \
+     -DWITH_GTK=ON \
+     -DWITH_VTK=OFF \
+     -DWITH_TBB=ON \
+     -DWITH_1394=OFF \
+     -DWITH_OPENEXR=OFF \
+     ../
+  
+  
     
 # Start Fan 
 sudo nano /etc/rc.local
