@@ -35,6 +35,7 @@ https://docs.opencv.org/3.3.0/d7/d9f/tutorial_linux_install.html
 
 https://github.com/jetsonhacks/buildOpenCVTX2/blob/master/buildOpenCV.sh
 
+install libgtk2.0-dev
 
 cmake -DCMAKE_BUILD_TYPE=Release -DPYTHON3_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_INCLUDE_DIR2=/usr/include/aarch64-linux-gnu/python3.5m -DPYTHON_LIBRARY=/usr/lib/aarch64-linux-gnu/libpython3.5m.so -DPYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include -DCMAKE_INSTALL_PREFIX=/usr/local ..
 
