@@ -213,8 +213,12 @@ cmake -DCMAKE_BUILD_TYPE=Release \
   
   
     
-# Start Fan 
+## Turn on Fan on start
 sudo nano /etc/rc.local
 
 /home/nvidia/jetson_clocks.sh
+
+## Flash TX2 to 32G
+sudo ./flash -S 29318MiB jetson-tx2 mmcblk0p1
+
 
