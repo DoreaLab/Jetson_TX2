@@ -31,6 +31,8 @@ pkg-config --libs --cflags opencv
 
 https://www.learnopencv.com/install-opencv3-on-ubuntu/
 
+https://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html (this seem to work with 3.3.1)
+
 https://docs.opencv.org/3.3.0/d7/d9f/tutorial_linux_install.html
 
 https://github.com/jetsonhacks/buildOpenCVTX2/blob/master/buildOpenCV.sh
