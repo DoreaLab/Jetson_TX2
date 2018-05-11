@@ -52,6 +52,32 @@ sudo make install
 
 sudo ldconfig -v
 
+ git log
+commit 000a13b6a35f65eb04e5c78721364406718f5d81
+Merge: 84b3b5b 9fa01a7
+Author: Alexander Alekhin <alexander.a.alekhin@gmail.com>
+Date:   Thu May 3 14:30:38 2018 +0000
+
+    Merge remote-tracking branch 'upstream/3.4' into merge-3.4
+
+commit 9fa01a7b7027eb0edbbdf02b3f687d2592071f77
+Merge: 4ff6a1b 788d6a7
+Author: Alexander Alekhin <alexander.a.alekhin@gmail.com>
+Date:   Thu May 3 10:37:40 2018 +0000
+
+    Merge pull request #11436 from seiko2plus:issue11433
+
+commit 4ff6a1bc7b0c224014a8bde1b1c670627c530704
+Author: zuoshaobo <zuoshaobo7@sina.com>
+Date:   Thu May 3 18:36:49 2018 +0800
+
+    Merge pull request #11425 from zuoshaobo:relu_negative_slope
+    
+    * FIX INF_ENGINE RELU ERROR
+    
+    * set slope to variable
+
+
 
 
 ## Tensorflow
