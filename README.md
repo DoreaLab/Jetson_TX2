@@ -52,7 +52,25 @@ sudo make install
 
 sudo ldconfig -v
 
- git log
+git log
+
+build OpenCV on X64:
+    readelf -Ws libGenApi.so
+
+/usr/bin/python3
+/usr/include/python3.5m
+/usr/include/x86_64-linux-gnu/python3.5m
+/usr/lib/x86_64-linux-gnu/libpython3.5m.so
+/usr/lib/python3/dist-packages/numpy/core/include
+
+cmake -DCMAKE_BUILD_TYPE=Release -DPYTHON3_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_INCLUDE_DIR2=/usr/include/x86_64-linux-gnu/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so -DPYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include -DCMAKE_INSTALL_PREFIX=/usr/local .. 
+
+sudo apt-get install gcc g++ gfortran make libblas-dev liblapack-dev libpcre3-dev libarpack2-dev libcurl4-gnutls-dev epstool libfftw3-dev transfig libfltk1.3-dev libfontconfig1-dev libfreetype6-dev libgl2ps-dev libglpk-dev libreadline-dev gnuplot libgraphicsmagick++1-dev libhdf5-serial-dev openjdk-7-jdk libsndfile1-dev llvm-dev lpr texinfo libglu1-mesa-dev pstoedit libjack0 libjack-dev portaudio19-dev libqhull-dev libqrupdate-dev libqscintilla2-dev libqt4-dev libqtcore4 libqtwebkit4 libqt4-network libqtgui4 libsuitesparse-dev zlib1g-dev libxft-dev autoconf automake bison flex gperf gzip librsvg2-bin icoutils libtool perl rsync tar libosmesa6-dev libqt4-opengl-dev
+
+python -m site --user-site
+
+
+
 commit 000a13b6a35f65eb04e5c78721364406718f5d81
 Merge: 84b3b5b 9fa01a7
 Author: Alexander Alekhin <alexander.a.alekhin@gmail.com>
