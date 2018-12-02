@@ -278,6 +278,10 @@ cmake -DCMAKE_BUILD_TYPE=Release \
 ## Turn on Fan on start
 sudo nano /etc/rc.local
 
+## Mac
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D ENABLE_CXX11=ON -D CPU_BASELINE=AVX2 -D CMAKE_INSTALL_PREFIX=/usr/local ..
+
+
 /home/nvidia/jetson_clocks.sh
 
 ## Flash TX2 to 32G
