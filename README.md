@@ -1,3 +1,4 @@
+This page contains the information on setting up your Jetson TX2 board for development.
 # Jetson_TX2
 sudo add-apt-repository universe
 
